@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tech Tamil MD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .nav-link {
+            @apply text-white hover:text-gray-300 transition-colors duration-300;
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: 0.025em;
+        }
+        .btn-white {
+            @apply bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200 transition-all duration-300;
+        }
+        .feature-card {
+            @apply bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-gray-600 transition-all duration-300 text-center;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-6 py-4 bg-black/80 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="text-2xl font-bold flex items-center space-x-2">
+                    <i class="fas fa-code text-2xl"></i>
+                    <span>Tech Tamil MD</span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-12">
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="home.html" class="nav-link text-white border-b-2 border-white">Home</a>
+                <div class="relative group">
+                    <button class="nav-link flex items-center">
+                        Login <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                    </button>
+                    <div class="absolute right-0 mt-2 w-48 bg-[#0f1623] rounded-md shadow-lg hidden group-hover:block border border-gray-800">
+                        <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 transition-colors">
+                            <i class="fab fa-google mr-2"></i> Google Login
+                        </a>
+                        <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-gray-800 transition-colors">
+                            <i class="fas fa-user mr-2"></i> Normal Login
+                        </a>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/@TECHTAMILMD" target="_blank" class="btn-white">
+                    YOUTUBE
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-6xl font-bold mb-6">Tech Tamil MD</h1>
+            <p class="text-2xl text-gray-400 mb-8">Your Ultimate Destination for Technology Learning</p>
+            <p class="text-lg text-gray-500 mb-12 max-w-3xl mx-auto">
+                Empowering the next generation of tech professionals with comprehensive courses, 
+                expert guidance, and hands-on experience in cutting-edge technologies.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="programs.html" class="btn-white text-lg px-8">
+                    Explore Programs
+                </a>
+                <a href="https://www.youtube.com/@TECHTAMILMD" target="_blank" 
+                   class="border border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-black transition-all duration-300">
+                    Watch Videos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Why Choose Tech Tamil MD?</h2>
+                <p class="text-xl text-gray-400">We provide comprehensive tech education with practical experience</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <div class="text-5xl mb-6">
+                        <i class="fas fa-graduation-cap text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Expert Instruction</h3>
+                    <p class="text-gray-400">Learn from industry experts with years of real-world experience in technology and software development.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="text-5xl mb-6">
+                        <i class="fas fa-laptop-code text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Hands-on Projects</h3>
+                    <p class="text-gray-400">Build real-world projects and gain practical experience that employers value in today's competitive market.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="text-5xl mb-6">
+                        <i class="fas fa-users text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Community Support</h3>
+                    <p class="text-gray-400">Join a vibrant community of learners and professionals who support each other's growth and success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-6 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-500 mb-2">10K+</div>
+                    <div class="text-gray-400">Students Enrolled</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-500 mb-2">50+</div>
+                    <div class="text-gray-400">Courses Available</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-purple-500 mb-2">95%</div>
+                    <div class="text-gray-400">Success Rate</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">24/7</div>
+                    <div class="text-gray-400">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Start Your Tech Journey?</h2>
+            <p class="text-xl text-gray-400 mb-8">Join thousands of students who have transformed their careers with our comprehensive tech programs.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="programs.html" class="btn-white text-lg px-8">
+                    View All Programs
+                </a>
+                <a href="blog.html" class="border border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-black transition-all duration-300">
+                    Read Our Blog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center text-gray-400">
+                <p>© 2024 Tech Tamil MD. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
