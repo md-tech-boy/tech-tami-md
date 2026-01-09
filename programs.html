@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH TAMIL MD | Programs</title>
+    <meta name="description" content="Coding programs, scripts, Windows commands and tools from TECH TAMIL MD">
+    <link rel="icon" type="image/png" href="https://files.catbox.moe/igig6e.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .cmd-box {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 20px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            color: #00ff41;
+            overflow-x: auto;
+            position: relative;
+            margin: 15px 0;
+        }
+
+        .cmd-box code {
+            display: block;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 140, 66, 0.2);
+            border: 1px solid var(--accent-orange);
+            color: var(--accent-orange);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: all 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent-orange);
+            color: #000;
+        }
+
+        .cmd-section {
+            margin-bottom: 30px;
+        }
+
+        .cmd-section h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="./index.html" class="nav-logo">
+            <img src="https://files.catbox.moe/igig6e.png" alt="TECH TAMIL MD">
+            TECH TAMIL MD
+        </a>
+        <ul class="nav-links">
+            <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="./home.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank"><i class="fab fa-youtube"></i> Videos</a>
+            </li>
+            <li><a href="./programs.html" class="active"><i class="fas fa-code"></i> Programs</a></li>
+            <li><a href="./blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+            <li><a href="https://t.me/TECH_TAMIL_MD" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+            <li><a href="https://t.me/TECH_TAMIL_MD" target="_blank"><i class="fas fa-headset"></i> Contact</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <main>
+        <!-- Programs Header -->
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-code"></i> <span class="gradient-text">Programs & Tools</span></h2>
+                    <p>Coding tutorials, scripts, commands, and useful tools</p>
+                </div>
+
+                <!-- Windows Activation Commands Section -->
+                <div class="section-header" style="margin-top: 40px;">
+                    <h2><i class="fab fa-windows"></i> Windows Activation Commands</h2>
+                    <p>Activate Windows & Office using these commands (Run as Administrator)</p>
+                </div>
+
+                <div class="glass-card" style="max-width: 900px; margin: 0 auto;">
+                    <div class="cmd-section">
+                        <h4><i class="fas fa-key"></i> Windows 10/11 Activation (KMS)</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr /skms kms8.msguides.com
+slmgr /ato</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fas fa-key"></i> Windows 11 Pro Activation</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>slmgr /ipk VK7JG-NPHTM-C97JM-9MPGT-3V66T
+slmgr /skms kms.digiboy.ir
+slmgr /ato</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fab fa-microsoft"></i> Office Activation (CMD as Admin)</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>cd /d %ProgramFiles%\Microsoft Office\Office16
+cscript ospp.vbs /sethst:kms8.msguides.com
+cscript ospp.vbs /act</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fas fa-terminal"></i> One-Click Windows Activation Script</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>irm https://get.activated.win | iex</code>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">
+                            <i class="fas fa-info-circle"></i> Run this in PowerShell as Administrator
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Update All Software Section -->
+                <div class="section-header" style="margin-top: 60px;">
+                    <h2><i class="fas fa-sync-alt"></i> Update All Software Commands</h2>
+                    <p>Commands to update all installed software on your system</p>
+                </div>
+
+                <div class="glass-card" style="max-width: 900px; margin: 0 auto;">
+                    <div class="cmd-section">
+                        <h4><i class="fab fa-windows"></i> Windows Package Manager (winget) - Update All</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>winget upgrade --all</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fas fa-box"></i> Chocolatey - Update All Packages</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>choco upgrade all -y</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fab fa-python"></i> Python - Update All Pip Packages</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>pip list --outdated --format=freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fab fa-node-js"></i> Node.js - Update All Global Packages</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>npm update -g</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fas fa-shield-alt"></i> Windows Defender - Quick Scan</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Scan -ScanType 1</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fas fa-broom"></i> Disk Cleanup Command</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>cleanmgr /sagerun:1</code>
+                        </div>
+                    </div>
+
+                    <div class="cmd-section">
+                        <h4><i class="fas fa-hdd"></i> System File Checker</h4>
+                        <div class="cmd-box">
+                            <button class="copy-btn" onclick="copyCmd(this)"><i class="fas fa-copy"></i> Copy</button>
+                            <code>sfc /scannow
+DISM /Online /Cleanup-Image /RestoreHealth</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="section-header" style="margin-top: 60px;">
+                    <h2><i class="fas fa-laptop-code"></i> Languages We Cover</h2>
+                </div>
+                <div class="quick-links-grid">
+                    <div class="quick-link-card tilt-element">
+                        <div class="icon-box i-cyan"><i class="fab fa-python"></i></div>
+                        <h3>Python</h3>
+                        <p>Scripts & Automation</p>
+                    </div>
+                    <div class="quick-link-card tilt-element">
+                        <div class="icon-box i-orange"><i class="fab fa-js"></i></div>
+                        <h3>JavaScript</h3>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="quick-link-card tilt-element">
+                        <div class="icon-box i-cyan"><i class="fab fa-css3-alt"></i></div>
+                        <h3>CSS</h3>
+                        <p>Styling & Design</p>
+                    </div>
+                    <div class="quick-link-card tilt-element">
+                        <div class="icon-box i-red"><i class="fab fa-html5"></i></div>
+                        <h3>HTML</h3>
+                        <p>Web Structure</p>
+                    </div>
+                    <div class="quick-link-card tilt-element">
+                        <div class="icon-box i-purple"><i class="fab fa-php"></i></div>
+                        <h3>PHP</h3>
+                        <p>Backend Development</p>
+                    </div>
+                    <div class="quick-link-card tilt-element">
+                        <div class="icon-box i-green"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Dart</h3>
+                        <p>Flutter Apps</p>
+                    </div>
+                </div>
+
+                <!-- Tools Section -->
+                <div class="section-header" style="margin-top: 60px;">
+                    <h2><i class="fas fa-tools"></i> Available Tools</h2>
+                </div>
+                <div class="cards-grid">
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-orange"><i class="fab fa-telegram"></i></div>
+                        <h3>Telegram Bots</h3>
+                        <p>Custom Telegram bots for automation, file sharing, and more.</p>
+                        <div class="card-links">
+                            <a href="https://md-tech-hacker.me/bots.html" target="_blank" class="card-link">
+                                <i class="fab fa-telegram"></i> Get Bots
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-cyan"><i class="fab fa-python"></i></div>
+                        <h3>Python Scripts</h3>
+                        <p>Useful Python scripts for automation and productivity.</p>
+                        <div class="card-links">
+                            <a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank" class="card-link">
+                                <i class="fab fa-youtube"></i> Tutorials
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-green"><i class="fas fa-globe"></i></div>
+                        <h3>Website Templates</h3>
+                        <p>Free website templates and design resources.</p>
+                        <div class="card-links">
+                            <a href="https://t.me/TECH_TAMIL_MD" target="_blank" class="card-link">
+                                <i class="fab fa-telegram"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-purple"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile Apps</h3>
+                        <p>Flutter apps and Android development resources.</p>
+                        <div class="card-links">
+                            <a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank" class="card-link">
+                                <i class="fab fa-youtube"></i> Learn More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-red"><i class="fas fa-terminal"></i></div>
+                        <h3>CLI Tools</h3>
+                        <p>Command-line tools and terminal utilities.</p>
+                        <div class="card-links">
+                            <a href="https://t.me/TECH_TAMIL_MD" target="_blank" class="card-link">
+                                <i class="fab fa-telegram"></i> Get Tools
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-cyan"><i class="fas fa-robot"></i></div>
+                        <h3>Discord Bots</h3>
+                        <p>Custom Discord bots for server management.</p>
+                        <div class="card-links">
+                            <a href="https://discord.gg/KGnHvyYd" target="_blank" class="card-link">
+                                <i class="fab fa-discord"></i> Join Server
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2><i class="fas fa-graduation-cap"></i> Learn Programming</h2>
+                    <p>Watch our coding tutorials on YouTube and learn programming in Tamil!</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 30px;">
+                        <a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank" class="social-btn btn-youtube">
+                            <i class="fab fa-youtube"></i> Watch Tutorials
+                        </a>
+                        <a href="https://t.me/TECH_TAMIL_MD" target="_blank" class="social-btn btn-telegram">
+                            <i class="fab fa-telegram"></i> Get Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://files.catbox.moe/igig6e.png" alt="Logo">
+                TECH TAMIL MD
+            </div>
+            <div class="footer-socials">
+                <a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank" class="footer-social-link"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://t.me/TECH_TAMIL_MD" target="_blank" class="footer-social-link"><i
+                        class="fab fa-telegram"></i></a>
+                <a href="https://discord.gg/KGnHvyYd" target="_blank" class="footer-social-link"><i
+                        class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com/tech_tamil_md/" target="_blank" class="footer-social-link"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/TECHTAMILMD" target="_blank" class="footer-social-link"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 <strong>TECH TAMIL MD</strong>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Copy command function
+        function copyCmd(btn) {
+            const code = btn.parentElement.querySelector('code').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                btn.style.background = 'var(--accent-green)';
+                btn.style.borderColor = 'var(--accent-green)';
+                btn.style.color = '#000';
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-copy"></i> Copy';
+                    btn.style.background = 'rgba(255, 140, 66, 0.2)';
+                    btn.style.borderColor = 'var(--accent-orange)';
+                    btn.style.color = 'var(--accent-orange)';
+                }, 2000);
+            });
+        }
+
+        // Toggle Mobile Nav
+        function toggleNav() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Cursor Tracking
+        document.addEventListener('mousemove', (e) => {
+            document.documentElement.style.setProperty('--cursor-x', e.clientX + 'px');
+            document.documentElement.style.setProperty('--cursor-y', e.clientY + 'px');
+        });
+
+        // Generate Stars
+        const starContainer = document.getElementById('stars');
+        for (let i = 0; i < 80; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.width = (Math.random() * 2.5 + 1) + 'px';
+            star.style.height = star.style.width;
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starContainer.appendChild(star);
+        }
+
+        // 3D Tilt Effect
+        document.addEventListener("mousemove", (e) => {
+            document.querySelectorAll(".tilt-element").forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left, y = e.clientY - rect.top;
+                if (x > -100 && x < rect.width + 100 && y > -100 && y < rect.height + 100) {
+                    card.style.transform = `perspective(1000px) rotateX(${((y - rect.height / 2) / (rect.height / 2)) * -5}deg) rotateY(${((x - rect.width / 2) / (rect.width / 2)) * 5}deg)`;
+                } else {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

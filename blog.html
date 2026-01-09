@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH TAMIL MD | Blog</title>
+    <meta name="description" content="Tech articles, tutorials, and guides from TECH TAMIL MD">
+    <link rel="icon" type="image/png" href="https://files.catbox.moe/igig6e.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="./index.html" class="nav-logo">
+            <img src="https://files.catbox.moe/igig6e.png" alt="TECH TAMIL MD">
+            TECH TAMIL MD
+        </a>
+        <ul class="nav-links">
+            <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="./home.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank"><i class="fab fa-youtube"></i> Videos</a>
+            </li>
+            <li><a href="./programs.html"><i class="fas fa-code"></i> Programs</a></li>
+            <li><a href="./blog.html" class="active"><i class="fas fa-newspaper"></i> Blog</a></li>
+            <li><a href="https://t.me/TECH_TAMIL_MD" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+            <li><a href="https://t.me/TECH_TAMIL_MD" target="_blank"><i class="fas fa-headset"></i> Contact</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <main>
+        <!-- Blog Header -->
+        <section class="section" style="padding-top: 120px;">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-newspaper"></i> <span class="gradient-text">Tech Blog</span></h2>
+                    <p>Articles, tutorials, and tech guides in Tamil</p>
+                </div>
+
+                <!-- Featured Post -->
+                <div class="glass-card tilt-element" style="max-width: 800px; margin: 0 auto 50px;">
+                    <div class="icon-box i-orange"><i class="fas fa-star"></i></div>
+                    <h3 style="font-size: 1.5rem;">Featured Post</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 25px;">
+                        Welcome to TECH TAMIL MD Blog! We're working on bringing you amazing tech articles,
+                        tutorials, and guides. Stay tuned for exciting content coming soon!
+                    </p>
+                    <div class="card-links">
+                        <a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank" class="card-link">
+                            <i class="fab fa-youtube"></i> Watch Videos
+                        </a>
+                        <a href="https://t.me/TECH_TAMIL_MD" target="_blank" class="card-link">
+                            <i class="fab fa-telegram"></i> Join Telegram
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog Categories -->
+                <div class="section-header" style="margin-top: 60px;">
+                    <h2><i class="fas fa-folder"></i> Categories</h2>
+                </div>
+                <div class="cards-grid">
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-red"><i class="fas fa-video"></i></div>
+                        <h3>Tech Reviews</h3>
+                        <p>Written reviews of the latest gadgets and tech products.</p>
+                        <span style="color: var(--text-muted); font-size: 0.85rem;">Coming Soon</span>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-cyan"><i class="fas fa-code"></i></div>
+                        <h3>Coding Tutorials</h3>
+                        <p>Step-by-step programming guides for beginners.</p>
+                        <span style="color: var(--text-muted); font-size: 0.85rem;">Coming Soon</span>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-green"><i class="fas fa-gamepad"></i></div>
+                        <h3>Gaming Guides</h3>
+                        <p>Tips, tricks, and strategies for popular games.</p>
+                        <span style="color: var(--text-muted); font-size: 0.85rem;">Coming Soon</span>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-purple"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>App Guides</h3>
+                        <p>How-to guides for Android and iOS apps.</p>
+                        <span style="color: var(--text-muted); font-size: 0.85rem;">Coming Soon</span>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-orange"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Security Tips</h3>
+                        <p>Cybersecurity advice and privacy guides.</p>
+                        <span style="color: var(--text-muted); font-size: 0.85rem;">Coming Soon</span>
+                    </div>
+                    <div class="glass-card tilt-element">
+                        <div class="icon-box i-cyan"><i class="fas fa-newspaper"></i></div>
+                        <h3>Tech News</h3>
+                        <p>Latest tech news and industry updates.</p>
+                        <span style="color: var(--text-muted); font-size: 0.85rem;">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2><i class="fas fa-bell"></i> Stay Updated</h2>
+                    <p>Subscribe to get notified when new articles are published!</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 30px;">
+                        <a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank" class="social-btn btn-youtube">
+                            <i class="fab fa-youtube"></i> Subscribe on YouTube
+                        </a>
+                        <a href="https://t.me/TECH_TAMIL_MD" target="_blank" class="social-btn btn-telegram">
+                            <i class="fab fa-telegram"></i> Join Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://files.catbox.moe/igig6e.png" alt="Logo">
+                TECH TAMIL MD
+            </div>
+            <div class="footer-socials">
+                <a href="https://youtube.com/@TECH_TAMIL_MD" target="_blank" class="footer-social-link"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://t.me/TECH_TAMIL_MD" target="_blank" class="footer-social-link"><i
+                        class="fab fa-telegram"></i></a>
+                <a href="https://discord.gg/KGnHvyYd" target="_blank" class="footer-social-link"><i
+                        class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com/tech_tamil_md/" target="_blank" class="footer-social-link"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/TECHTAMILMD" target="_blank" class="footer-social-link"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 <strong>TECH TAMIL MD</strong>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Nav
+        function toggleNav() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Cursor Tracking
+        document.addEventListener('mousemove', (e) => {
+            document.documentElement.style.setProperty('--cursor-x', e.clientX + 'px');
+            document.documentElement.style.setProperty('--cursor-y', e.clientY + 'px');
+        });
+
+        // Generate Stars
+        const starContainer = document.getElementById('stars');
+        for (let i = 0; i < 80; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.width = (Math.random() * 2.5 + 1) + 'px';
+            star.style.height = star.style.width;
+            star.style.animationDelay = Math.random() * 3 + 's';
+            starContainer.appendChild(star);
+        }
+
+        // 3D Tilt Effect
+        document.addEventListener("mousemove", (e) => {
+            document.querySelectorAll(".tilt-element").forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left, y = e.clientY - rect.top;
+                if (x > -100 && x < rect.width + 100 && y > -100 && y < rect.height + 100) {
+                    card.style.transform = `perspective(1000px) rotateX(${((y - rect.height / 2) / (rect.height / 2)) * -5}deg) rotateY(${((x - rect.width / 2) / (rect.width / 2)) * 5}deg)`;
+                } else {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
